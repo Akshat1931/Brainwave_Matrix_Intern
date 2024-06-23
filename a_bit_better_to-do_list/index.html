@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced To-Do List</h1>
+        <div class="task-input">
+            <input type="text" id="task" placeholder="Enter your task here">
+            <select id="priority">
+                <option value="urgent-important">Urgent and Important</option>
+                <option value="important-not-urgent">Important but Not Urgent</option>
+                <option value="urgent-not-important">Urgent but Not Important</option>
+                <option value="neither">Neither Urgent nor Important</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="tasks-container">
+            <div class="tasks" id="urgent-important-section">
+                <h2>Urgent and Important</h2>
+                <ul id="urgent-important"></ul>
+            </div>
+            <div class="tasks" id="important-not-urgent-section">
+                <h2>Important but Not Urgent</h2>
+                <ul id="important-not-urgent"></ul>
+            </div>
+            <div class="tasks" id="urgent-not-important-section">
+                <h2>Urgent but Not Important</h2>
+                <ul id="urgent-not-important"></ul>
+            </div>
+            <div class="tasks" id="neither-section">
+                <h2>Neither Urgent nor Important</h2>
+                <ul id="neither"></ul>
+            </div>
+        </div>
+        <div class="pomodoro">
+            <h2>Timer</h2>
+            <h4>"Take a 5-minute break after every 25 minutes of focused work to enhance productivity and maintain focus."</h4>
+            <div id="timer">25:00</div>
+            <button onclick="startPomodoro()">Start</button>
+            <button onclick="resetPomodoro()">Reset</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

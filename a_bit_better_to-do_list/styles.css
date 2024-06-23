@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://wallpapercave.com/wp/wp5257324.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-input input, .task-input select, .task-input button {
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+}
+
+.task-input input, .task-input select {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.task-input button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-input button:hover {
+    background-color: #218838;
+}
+
+.tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tasks {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    background-clip: padding-box;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.tasks:hover {
+    transform: scale(1.05);
+}
+
+#urgent-important-section {
+    background: linear-gradient(135deg, #ff6f61, #de2f2f);
+}
+
+#important-not-urgent-section {
+    background: linear-gradient(135deg, #f7b733, #fc4a1a);
+}
+
+#urgent-not-important-section {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#neither-section {
+    background: linear-gradient(135deg, #30cfd0, #330867);
+}
+
+.tasks h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.tasks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks ul li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.tasks ul li button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tasks ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pomodoro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.pomodoro button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.pomodoro button:hover {
+    background-color: #0056b3;
+}
